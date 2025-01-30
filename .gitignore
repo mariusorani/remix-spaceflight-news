@@ -20,3 +20,6 @@ styled-system-studio
 /e2e/.auth/
 
 .github/workflows/deploy.yml
+
+.env.production
+.env.development
