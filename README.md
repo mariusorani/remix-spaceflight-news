@@ -16,7 +16,7 @@ A modern web application built with Remix, showcasing spaceflight news with a be
 - **DevOps**:
   - [Docker](https://www.docker.com/) - Containerization
   - [GitHub Actions](https://github.com/features/actions) - CI/CD
-  - [Google Cloud Run](https://cloud.google.com/run) - Deployment
+
 - **Code Quality**:
   - [TypeScript](https://www.typescriptlang.org/) - Type safety
   - [ESLint](https://eslint.org/) - Linting
