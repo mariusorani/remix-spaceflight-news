@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "out-tsc",
+    "types": ["@remix-run/node", "vite/client"]
+  },
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "app/**/*.js",
+    "app/**/*.jsx",
+    "styled-system/**/*.{js,jsx,ts,tsx}",
+    "**/.server/**/*.ts",
+    "**/.server/**/*.tsx",
+    "**/.client/**/*.ts",
+    "**/.client/**/*.tsx"
+  ],
+  "exclude": [
+    "out-tsc",
+    "dist",
+    "tests",
+    "jest.config.ts",
+    "**/*.spec.*",
+    "**/*.test.*"
+  ]
+}

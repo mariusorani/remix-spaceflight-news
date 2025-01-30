@@ -72,6 +72,17 @@ module.exports = {
       ],
     },
 
+    // Jest
+    {
+      files: ["**/*.{spec,test}.{js,jsx,ts,tsx}"],
+      env: {
+        "jest/globals": true,
+        "node": true
+      },
+      extends: ["plugin:jest/recommended"],
+      plugins: ["jest"],
+    },
+
     // Node
     {
       files: [".eslintrc.js"],

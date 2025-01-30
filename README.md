@@ -1,68 +1,103 @@
-# Welcome to Remix!
+# Spaceflight News Remix
 
-- [Remix Docs](https://remix.run/docs)
-- [Netlify Functions Overview](https://docs.netlify.com/functions/overview)
+A modern web application built with Remix, showcasing spaceflight news with a beautiful UI using Radix UI and Panda CSS.
 
-## Netlify Setup
+## Tech Stack
 
-1. Install the [Netlify CLI](https://docs.netlify.com/cli/get-started/):
+- **Framework**: [Remix](https://remix.run/) - Full stack web framework
+- **Styling**: 
+  - [Panda CSS](https://panda-css.com/) - CSS-in-JS with great DX
+  - [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components
+  - [Radix Themes](https://www.radix-ui.com/themes) - Beautiful, consistent theming
+- **Testing**:
+  - [Jest](https://jestjs.io/) - Unit testing
+  - [Playwright](https://playwright.dev/) - End-to-end testing
+  - [Testing Library](https://testing-library.com/) - React component testing
+- **DevOps**:
+  - [Docker](https://www.docker.com/) - Containerization
+  - [GitHub Actions](https://github.com/features/actions) - CI/CD
+  - [Google Cloud Run](https://cloud.google.com/run) - Deployment
+- **Code Quality**:
+  - [TypeScript](https://www.typescriptlang.org/) - Type safety
+  - [ESLint](https://eslint.org/) - Linting
+  - [Prettier](https://prettier.io/) - Code formatting
+  - [Husky](https://typicode.github.io/husky/) - Git hooks
 
-```sh
-npm i -g netlify-cli
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20 or later
+- npm 9 or later
+- Docker (optional, for containerization)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/spaceflight-news-remix.git
+cd spaceflight-news-remix
 ```
 
-If you have previously installed the Netlify CLI, you should update it to the latest version:
-
-```sh
-npm i -g netlify-cli@latest
-```
-
-2. Sign up and log in to Netlify:
-
-```sh
-netlify login
-```
-
-3. Create a new site:
-
-```sh
-netlify init
-```
-
-## Development
-
-Ensure all packages are installed by running:
-
-```sh
+2. Install dependencies:
+```bash
 npm install
 ```
 
-Run
-
-```sh
-netlify dev
+3. Start the development server:
+```bash
+npm run dev
 ```
 
-Open up [http://localhost:8888](http://localhost:8888), and you're ready to go!
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
-### Serve your site locally
+### Docker
 
-To serve your site locally in a production-like environment, run
+To run the app using Docker:
 
-```sh
-netlify serve
+```bash
+# Build the image
+docker build -t spaceflight-news .
+
+# Run the container
+docker run -p 3000:3000 spaceflight-news
 ```
 
-Your site will be available at [http://localhost:8888](http://localhost:8888). Note that it will not auto-reload when you make changes.
+Or using Docker Compose:
 
-## Deployment
-
-There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
-
-```sh
-# preview deployment
-netlify deploy --build
-
-# production deployment
-netlify deploy --build --prod
+```bash
+docker-compose up --build
 ```
+
+## Testing
+
+```bash
+# Run unit tests
+npm test
+
+# Run E2E tests
+npm run test:e2e
+
+# Run all tests
+npm run test:all
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Remix Documentation](https://remix.run/docs/en/main)
+- [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction)
+- [Panda CSS Documentation](https://panda-css.com/docs/overview/getting-started)

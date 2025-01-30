@@ -8,3 +8,15 @@ node_modules
 # Local Netlify folder
 .netlify
 .DS_Store
+
+## Panda
+styled-system
+styled-system-studio
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/e2e/.auth/
+
+.github/workflows/deploy.yml
