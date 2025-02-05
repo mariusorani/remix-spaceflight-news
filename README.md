@@ -35,7 +35,7 @@ A modern web application built with Remix, showcasing spaceflight news with a be
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/spaceflight-news-remix.git
+git clone https://github.com/mariusorani/spaceflight-news-remix.git
 cd spaceflight-news-remix
 ```
 
